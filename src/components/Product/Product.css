@@ -56,4 +56,8 @@
   border-top: 1px solid #95a0a7;
   background-color: #ffe0b3;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.product button:hover {
+  background-color: #ff9900;
 }

@@ -2,14 +2,14 @@ import './CartDetails.css'
 import { ImBin } from "react-icons/im";
 import {BsArrowRightShort} from "react-icons/bs";
 
-const CartDetails = () => {
+const CartDetails = ({cart}) => {
     return (
         <div className="cart-details">
             <h5>Order Summary</h5>
             <div className="order-details">
             
                 <p>
-                Selected Items: 6
+                Selected Items: {cart.length}
                 </p>
                 <p>
                 Total Price: $1140
