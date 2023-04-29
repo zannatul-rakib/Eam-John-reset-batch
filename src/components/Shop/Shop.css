@@ -1,7 +1,21 @@
 .shop {
-  margin-top: 100px;
+  margin-top: 80px;
+  position: relative;
 }
 .shop-container {
+  position: relative;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  gap: 10px;
+}
+.products-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.cart-container {
+  position: relative;
+  background: rgba(255, 153, 0, 0.3);
+  padding: 0 10px;
 }
