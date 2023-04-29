@@ -26,18 +26,18 @@
 
 .product .product-wrapper .product-details h3 {
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
   color: #0e161a;
   margin-bottom: 10px;
 }
 .product .product-wrapper .product-details h4 {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 0.0015em;
   color: #0e161a;
   margin-bottom: 15px;
 }
-.product .product-wrapper .product-details p {
+.product .product-wrapper .product-details p small {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.004em;
