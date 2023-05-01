@@ -5,7 +5,7 @@ import {BsArrowRightShort} from "react-icons/bs";
 const CartDetails = (props) => {
     // const cart = props.cart; // option 01
     const { cart } = props;
-    console.log(cart)
+    // console.log(cart)
 
     let total = 0;
     let totalShipping = 0;
