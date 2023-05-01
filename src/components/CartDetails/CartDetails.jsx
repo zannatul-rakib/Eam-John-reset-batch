@@ -9,9 +9,16 @@ const CartDetails = (props) => {
 
     let total = 0;
     let totalShipping = 0;
+    let quantity = 0;
     for (const product of cart) {
-        total = total + product.price;
+        // if (product.quantity === 0) {
+        //     product.quantity = 1;
+        // }
+        // shortcut
+        // product.quantity = product.quantity || 1;
+        total = total + product.price * product.quantity;
         totalShipping = totalShipping + product.shipping;
+        quantity = quantity + product.quantity;
     }
 
     const tax = total * 10 / 100;
@@ -25,7 +32,7 @@ const CartDetails = (props) => {
             <div className="order-details">
             
                 <p>
-                Selected Items: {cart.length}
+                Selected Items: {quantity}
                 </p>
                 <p>
                 Total Price: ${total}
