@@ -4,7 +4,7 @@ import {BsArrowRightShort} from "react-icons/bs";
 
 const CartDetails = (props) => {
     // const cart = props.cart; // option 01
-    const { cart } = props;
+    const { cart, handleClearCart } = props;
     // console.log(cart)
 
     let total = 0;
@@ -43,7 +43,7 @@ const CartDetails = (props) => {
             </div>
             
 
-            <button className="clear-btn">Clear Cart <ImBin/></button> <br />
+            <button onClick={handleClearCart} className="clear-btn">Clear Cart <ImBin/></button> <br />
             <button className="review-btn">Review Order <BsArrowRightShort/></button>
     </div>
     );
